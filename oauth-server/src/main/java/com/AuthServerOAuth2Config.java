@@ -53,7 +53,7 @@ public class AuthServerOAuth2Config extends AuthorizationServerConfigurerAdapter
                 .authorizedGrantTypes(
                         "password", "authorization_code", "refresh_token")
                 .scopes("read")
-                .accessTokenValiditySeconds(30)
+                .accessTokenValiditySeconds(1800)
                 .refreshTokenValiditySeconds(7200);
     }
 
